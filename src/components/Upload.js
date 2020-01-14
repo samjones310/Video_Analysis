@@ -5,7 +5,7 @@ import {Col,ButtonToolbar,Button,Form} from 'react-bootstrap';
 function UploadVideo() {
   return (
   
-    <Form action="http://10.114.40.100:5000/video_upload" method="POST" enctype ="multipart/form-data">
+    <Form action="http://localhost:2000/video_upload" method="POST" enctype ="multipart/form-data">
     <br /><br />
     <Form.Row>
     <Col md={7}>

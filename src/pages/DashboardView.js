@@ -24,7 +24,7 @@ export default class DashboardView extends Component {
     }
   }
   componentDidMount(){
-    fetch('http://10.114.40.100:5000/table_data?ids='+this.props.match.params.id).then(response =>
+    fetch('http://localhost:2000/table_data?ids='+this.props.match.params.id).then(response =>
     response.json().then(data=>{
     this.setState({table: data.items})
     this.setState({loadings: false})
