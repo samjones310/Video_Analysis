@@ -12,7 +12,7 @@ return (
   <Col md={6}>
   <div >
   <br />
-  <Image  src={"http://localhost:2000/"+ "static/frames/"+ item.img} width="350" height="200"  />
+  <Image  src={"http://35.225.193.235:2000/"+ "static/frames/"+ item.img} width="350" height="200"  />
   <br />
   Frame Name: {item.frame}
   <br />

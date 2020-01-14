@@ -11,7 +11,7 @@ function Tabular(props) {
     <Col md={4}>
     <div >
     <br />
-    <Image  src={"http://localhost:2000/"+ "static/images/"+ item.img} width="100" height="70" roundedCircle />
+    <Image  src={"http://35.225.193.235:2000/"+ "static/images/"+ item.img} width="100" height="70" roundedCircle />
     <br />
     Appearances: {item.appearances}
     <br />

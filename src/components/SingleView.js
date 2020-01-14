@@ -11,7 +11,7 @@ function SingleView(props) {
       <Row>
         <Col md={2}></Col>
         <Col md={4}>
-       <Image src={"http://localhost:2000/"+ "static/images/"+ props.data1.img} width="100" height="70" roundedCircle />
+       <Image src={"http://35.225.193.235:2000/"+ "static/images/"+ props.data1.img} width="100" height="70" roundedCircle />
        </Col>
        </Row>
        <br />

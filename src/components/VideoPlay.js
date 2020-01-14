@@ -6,7 +6,7 @@ function VideoPlay() {
     <div>
       <br /><br /><br /><br />
     <VideoPlayer
-    url="http://localhost:2000/static/demo.mp4"
+    url="http://35.225.193.235:2000/static/demo.mp4"
     autosize="true"
     autoplay="true"
   />

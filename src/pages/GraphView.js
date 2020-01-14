@@ -20,7 +20,7 @@ export default class GraphView extends Component {
     }
   }
   componentDidMount(){
-    fetch('http://localhost:2000/graph_data?ids='+this.props.match.params.id).then(response =>
+    fetch('http://35.225.193.235:2000/graph_data?ids='+this.props.match.params.id).then(response =>
     response.json().then(data=>{
     this.table=data.data
     this.setState({table: data})
