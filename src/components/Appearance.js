@@ -12,7 +12,7 @@ return (
   <Col md={6}>
   <div >
   <br />
-  <Image  src={"http://35.225.193.235:2000/"+ "static/frames/"+ item.img} width="350" height="200"  />
+  <Image  src={"http://localhost:5000/"+ "static/frames/"+ item.img} width="350" height="200"  />
   <br />
   Frame Name: {item.frame}
   <br />
@@ -25,7 +25,7 @@ return (
 <Row>
 <Col md={4}></Col>
 <Col md={4}>
-  <a href={'/detailedview/'+props.data[0].id+'/'+props.data[0].cid} class="btn btn-primary center-block">Back to Association View</a>
+  <a href={'/detailedview/'+props.data[0].cid} class="btn btn-primary center-block">Back to Association View</a>
 </Col>
 
 </Row>

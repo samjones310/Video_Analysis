@@ -21,7 +21,7 @@ export default class GraphView extends Component {
     }
   }
   componentDidMount(){
-    fetch('http://localhost:5000/graph_data').then(response =>
+    fetch('http://localhost:5000/graph_data_3?ids='+this.props.match.params.id).then(response =>
     response.json().then(data=>{
     this.table=data.data
     this.setState({table: data})
@@ -41,12 +41,17 @@ export default class GraphView extends Component {
             <Col md={6}>
             <UploadVideo />
             <br />
+            <Stats2 data1={this.state.table.stat} loadings={this.state.loadings}/>
+            <br />
+            <Navig1 />
+            <br />
+            <Association apr={this.state.table.apr}  loadings={this.state.loadings}/>
             <br />
             </Col>
             <Col md={6}>
             <Row>
-
-                <Col md={6}><Navig2a  data={this.state.stats} /></Col>
+                <Col md={9}>
+                <Navig2a  data1={this.state.table.stat} loadings={this.state.loadings}/></Col>
                 </Row>
                 <Row>
                 <Graphic1 data={this.state.table.data} loadings={this.state.loadings}  />

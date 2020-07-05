@@ -12,11 +12,11 @@ return (
   <Col md={4}>
   <div >
   <br />
-  <Image  src={"http://35.225.193.235:2000/"+ "static/images/"+ item.img} width="100" height="70" roundedCircle />
+  <Image  src={"http://localhost:5000/"+ "static/images/"+ item.img} width="100" height="70" roundedCircle />
   <br />
   Confidence: {item.confidence}
   <br />
-  <a href={'/detailedview/'+item.key+'/'+item.person} class="btn btn-primary center-block">View Relation</a>
+  <a href={'/detailedview/'+item.person} class="btn btn-primary center-block">View Relation</a>
   <br />
   </div>
   </Col>

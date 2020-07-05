@@ -11,13 +11,18 @@ function Navig2a(props) {
 <Container>
     <Nav fill variant="tabs" defaultActiveKey="#">
     <Nav.Item>
-        <Nav.Link href={"/dashboard/"+props.data1.ur}>Tabulated View</Nav.Link>
+        <Nav.Link href={"/dashboard/"}>Tabulated View</Nav.Link>
     </Nav.Item>
     <Nav.Item>
    
-        <Nav.Link href='#'>Graph View</Nav.Link>
+        <Nav.Link href={"/graphview/"}>Graph View</Nav.Link>
     </Nav.Item>
     </Nav>
+</Container>
+
+<br />
+<Container>
+   
 </Container>
     </div>
   );

@@ -11,16 +11,16 @@ function SingleView(props) {
       <Row>
         <Col md={2}></Col>
         <Col md={4}>
-       <Image src={"http://35.225.193.235:2000/"+ "static/images/"+ props.data1.img} width="100" height="70" roundedCircle />
+       <Image src={"http://localhost:5000/"+ "static/images/"+ props.data1.img} width="100" height="70" roundedCircle />
        </Col>
        </Row>
        <br />
        <Row>
         <Col md={1}></Col>
         <Col>
-       <a href={'/appearance/'+props.data1.ur+'/'+props.data1.cid} class="btn btn-success">View Appearances</a>
+       <a href={'/appearance/'+props.data1.cid} class="btn btn-success">View Appearances</a>
        <br /><br />
-       <a href={'/dashboard/'+props.data1.ur} class="btn btn-danger center-block">Back to Dashboard</a>
+       <a href={'/dashboard/'} class="btn btn-danger center-block">Back to Dashboard</a>
        </Col>
        </Row>
     </div>

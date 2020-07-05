@@ -11,12 +11,12 @@ function Stats(props) {
         <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-4 cont">
-        Video Duration: {props.data.duration}
+        <b>Video Duration : {props.data.duration}</b>
         <br />
         </div>
         <div class="col-sm-1"></div>
         <div class="col-sm-4 cont">
-        People Appeared: {props.data.people}
+        <b>People's Appeared : {props.data.people}</b>
         <br />
         </div>
         </div>
@@ -24,12 +24,12 @@ function Stats(props) {
         <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-4 cont">
-        Faces Detected: {props.data.faces}
+        <b>Faces Detected : {props.data.faces}</b>
         <br />
         </div>
         <div class="col-sm-1"></div>
         <div class="col-sm-4 cont">
-        Maximum Association:
+        <b>Maximum Association :</b>
         <br />
         </div>
         </div>

@@ -5,7 +5,7 @@ import {Col,ButtonToolbar,Button,Form} from 'react-bootstrap';
 function UploadVideo() {
   return (
   
-    <Form action="http://35.225.193.235:2000/video_upload" method="POST" enctype ="multipart/form-data">
+    <Form action="http://localhost:5000/video_upload" method="POST" enctype ="multipart/form-data">
     <br /><br />
     <Form.Row>
     <Col md={7}>
@@ -19,12 +19,22 @@ function UploadVideo() {
     </div>
     </Col>
     <Col md={4}>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br />
+        <label>
+          <Form.Control type="text" name="sensor_id" />
+        </label>
+        <br /> <br />
        <ButtonToolbar>
-        <Button type="submit" variant="warning" size="lg" active>
-            Analyze Video
+        <Button fullWidth type="submit" variant="warning" size="lg" active>
+            ANALYZE VIDEO
         </Button>
     </ButtonToolbar>
+    <br /><br />
+    <a href="localhost:5000/view_results" >
+    <Button   variant="primary" size="lg" active>
+            VIEW RESULTS
+    </Button>
+    </a>
     </Col>
     </Form.Row>
     </Form>

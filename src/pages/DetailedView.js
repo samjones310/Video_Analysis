@@ -19,7 +19,7 @@ export default class DetailedView extends Component {
   componentDidMount(){
     console.log(this.props.match.params.id);
     console.log(this.props.match.params.cid);
-    fetch('http://35.225.193.235:2000/apr_data?ids='+this.props.match.params.id+'&cid='+this.props.match.params.cid).then(response =>
+    fetch('http://localhost:5000/apr_data?cid='+this.props.match.params.cid).then(response =>
     response.json().then(data=>{
     this.table=data.data
     this.setState({table: data})

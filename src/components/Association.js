@@ -12,20 +12,20 @@ function Association(props) {
 {props.apr.map(item => (
   <Row>
   <Col  md={2}>
-      <Image src={"http://35.225.193.235:2000/"+ "static/images/"+ item.img_1} width="100" height="50" roundedCircle />
+      <Image src={"http://localhost:5000/"+ "static/images/"+ item.img_1} width="100" height="50" roundedCircle />
     </Col>
     <Col  md={1}>
       <Image src={arrow} width="50" height="50" roundedCircle />
     </Col>
     <Col md={2}>
-      <Image src={"http://35.225.193.235:2000/"+ "static/images/"+ item.img_2} width="100" height="50" roundedCircle />
+      <Image src={"http://localhost:5000/"+ "static/images/"+ item.img_2} width="100" height="50" roundedCircle />
     </Col>
     <Col md={7}>
     <div class="">
       <br />
-      <h4>
-    Confidence of <b>{item.conf}</b>  Out of <b> {item.count}</b> Appearances.
-    </h4>
+      <h6>
+    Confidence of <b>{item.conf}</b> in <b> {item.count}</b> Appearances.
+    </h6>
         <br />  
         </div>
         <br /><br />
